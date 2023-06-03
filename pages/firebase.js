@@ -1,20 +1,21 @@
 import firebase from "firebase/app";
-import { initializeApp } from "firebase/app";
-// import { getFirestore } from "firebase/firestore";
-import { getFirestore } from "firebase/firestore/lite";
-// import "firebase/auth";
+import { initializeApp, applicationDefault, cert } from "firebase/app";
+import { getFirestore, Timestamp, FieldValue } from "firebase/firestore/lite";
 import "firebase/firestore";
+// import "firebase/auth";
+// import { getFirestore } from "firebase/firestore";
+// const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
+// const { getFirestore, } = require('firebase-admin/firestore');
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAmP4pciCMXpU_6vMg89nQw9F6vV08kyZ8",
-  authDomain: "belajar-firebase-511aa.firebaseapp.com",
-  projectId: "belajar-firebase-511aa",
-  storageBucket: "belajar-firebase-511aa.appspot.com",
-  messagingSenderId: "356276762275",
-  appId: "1:356276762275:web:ebd4d6bcc7164ba1dab116",
-  measurementId: "G-RDXBV9T46T",
+  apiKey: "AIzaSyAmSsNrlaHQEmiMXd3ea5dC8rD0b2cjhVc",
+  authDomain: "sinau-819a2.firebaseapp.com",
+  projectId: "sinau-819a2",
+  storageBucket: "sinau-819a2.appspot.com",
+  messagingSenderId: "747049055322",
+  appId: "1:747049055322:web:eef6f6589522c61ae8d463",
+  measurementId: "G-05CNLJERLJ",
 };
-
 // Initialize Firebase
 const fireConfig = initializeApp(firebaseConfig);
 const db = getFirestore(fireConfig);
